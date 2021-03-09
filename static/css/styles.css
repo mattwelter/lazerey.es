@@ -176,19 +176,19 @@ form p {
 font-family: 'Archia Regular';
 font-style: normal;
 font-weight: normal;
-src: local('Archia Regular'), url('Archia-Regular.otf') format('otf');
+src: local('Archia Regular'), url('Archia-Regular.woff') format('woff');
 }
 
 @font-face {
 font-family: 'Formular';
 font-style: normal;
 font-weight: normal;
-src: local('Formular'), url('formular.otf') format('otf');
+src: local('Formular'), url('formular.woff') format('woff');
 }
 
 @font-face {
 font-family: 'Space Mono Regular';
 font-style: normal;
 font-weight: normal;
-src: local('Space Mono Regular'), url('SpaceMono-Regular.ttf') format('ttf');
+src: local('Space Mono Regular'), url('SpaceMono-Regular.woff') format('woff');
 }
