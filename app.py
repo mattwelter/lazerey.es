@@ -7,10 +7,12 @@ from os.path import join, dirname, realpath
 from flask import Flask, render_template, request, redirect, url_for, abort, send_file
 from werkzeug.utils import secure_filename
 import json
+from flask_talisman import Talisman
 
 UPLOADS_PATH = join(dirname(realpath(__file__)), 'static/uploads/..')
 
 app = Flask(__name__)
+Talisman(app)
 app.config['MAX_CONTENT_LENGTH'] = 1024 * 1024
 app.config['UPLOAD_EXTENSIONS'] = ['.jpg', '.png', '.gif']
 app.config['UPLOAD_PATH'] = 'uploads'
