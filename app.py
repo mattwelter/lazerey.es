@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 from PIL import Image
 from os.path import join, dirname, realpath
-from flask import Flask, render_template, request, redirect, url_for, abort
+from flask import Flask, render_template, request, redirect, url_for, abort, send_file
 from werkzeug.utils import secure_filename
 import json
 
@@ -71,7 +71,8 @@ def upload_files():
             img[y+ey:y+ey+eh, x+ex:x+ex+ew, :] = \
                 img[y+ey:y+ey+eh, x+ex:x+ex+ew, :] * (1 - d_alpha) + d * d_alpha
 
-    cv2.imwrite('out.png', img)
+    cv2.imwrite(os.path.expanduser('~/lazereyes.png'), img)
+    return send_file(os.path.expanduser('~/lazereyes.png'), as_attachment=True)
     return render_template('index.html')
 
 if __name__ == "__main__":
