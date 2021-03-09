@@ -38,11 +38,12 @@ def upload_files():
             abort(400)
         uploaded_file.save('new.png')
    
-    #https://github.com/Itseez/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
-    face_cascade = cv2.CascadeClassifier('/Users/matt/Python/LazerEyes/haarcascade_eye.xml')
+   curren_dir = os.getcwd()
 
+    #https://github.com/Itseez/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml
+    face_cascade = cv2.CascadeClassifier(curren_dir + '/haarcascade_frontalface_default.xml')
     #https://github.com/Itseez/opencv/blob/master/data/haarcascades/haarcascade_eye.xml
-    eye_cascade = cv2.CascadeClassifier('/Users/matt/Python/LazerEyes/haarcascade_eye.xml')
+    eye_cascade = cv2.CascadeClassifier(curren_dir + '/haarcascade_eye.xml')
 
     
     img = cv2.imread('new.png')
