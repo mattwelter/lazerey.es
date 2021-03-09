@@ -4,7 +4,7 @@ import numpy as np
 import cv2
 from PIL import Image
 from os.path import join, dirname, realpath
-from flask import Flask, render_template, request, redirect, url_for, abort, send_file
+from flask import Flask, render_template, request, redirect, url_for, abort, send_file, send_from_directory
 from werkzeug.utils import secure_filename
 import json
 from flask_talisman import Talisman
@@ -24,6 +24,10 @@ def validate_image(stream):
     if not format:
         return None
     return '.' + (format if format != 'jpeg' else 'jpg')
+
+@app.route('/favicon.ico')
+def favicon():
+    return app.send_static_file('favicon.ico')
 
 @app.route('/')
 def index():
