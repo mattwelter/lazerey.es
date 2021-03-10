@@ -58,6 +58,7 @@ h2 {
 }
 
 #uploadfile {
+	-webkit-appearance: none;
 	font-family: "Formular";
 	font-size: 16px;
 	line-height: 20px;
@@ -83,6 +84,7 @@ h2 {
 }
 
 #submit {
+	-webkit-appearance: none;
 	font-family: "Formular";
 	font-size: 16px;
 	letter-spacing: -0.02em;
