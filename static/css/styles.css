@@ -124,7 +124,9 @@ form p {
 	display: none;
 }
 
-
+.extra-space {
+	display: none;
+}
 
 
 
@@ -147,7 +149,7 @@ form p {
 }
 
 @media screen and (max-width: 1000px) {
-	#toosmall {
+	/*#toosmall {
 		font-family: "Formular";
 		display: block;
 		position: relative;
@@ -162,15 +164,88 @@ form p {
 		padding: 8px 24px;
 		border: solid 1px black;
 		margin-top: 35%;
-	}
+	}*/
 	html {
-		background: none;
+		background: url("mobilebg.png") no-repeat center center fixed;
+		background-size: cover;
 	}
 	.mobile-none {
-		display: none;
+		
 	}
 }
 
+@media screen and (max-width: 500px) {
+	
+	h1 {
+		font-family: Archia;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 38px;
+		letter-spacing: -0.03em;
+		text-align: center;
+		height: 54px;
+		width: 346px;
+		padding: 12px 0px 0px 0px;
+		margin-bottom: -24px;
+	}
+
+	h2 {
+		font-family: Formular;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 29px;
+		letter-spacing: -0.03em;
+		text-align: center;
+		margin-bottom: -4px;
+		-webkit-text-stroke: .5px black;
+	}
+
+	#directions {
+		font-family: Space Mono;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: -0.03em;
+		text-align: left;
+		padding: 16px 32px;
+		width: 280px;
+		margin-bottom: 32px;
+	}
+
+	#content {
+		margin: 0 auto;
+	    position: relative;
+	    margin-top: 100px;
+	    display: table;
+	    padding-left: 8px;
+		zoom: 1;
+	    -moz-transform: scale(1);
+	}
+
+	#uploadfile {
+		width: 345px;
+		padding-left: 65px;
+	}
+
+	#submit {
+		width: 345px;
+	}
+
+	form p {
+		display: block;
+	}
+
+	#credit {
+		display: none;
+	}
+
+	.extra-space {
+		display: inline-block;
+	}
+}
 
 @font-face {
 	font-family: 'Archia Regular';
