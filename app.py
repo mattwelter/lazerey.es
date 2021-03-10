@@ -8,6 +8,7 @@ from flask import Flask, render_template, request, redirect, url_for, abort, sen
 from werkzeug.utils import secure_filename
 import json
 from flask_talisman import Talisman
+from waitress import serve
 
 UPLOADS_PATH = join(dirname(realpath(__file__)), 'static/uploads/..')
 
@@ -82,4 +83,5 @@ def upload_files():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    #app.run(debug=True)
+    serve(app, host='0.0.0.0', port=port)
