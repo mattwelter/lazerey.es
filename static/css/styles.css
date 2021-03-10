@@ -255,7 +255,7 @@ form p {
 	font-weight: normal;
 	src: url('../fonts/archia-regular.woff') format('woff'),
 		 url('../fonts/archia-regular.woff2') format('woff2'),
-		 url('../fonts/Archia-Regular.ttf') format('ttf'),
+		 url('https://res.cloudinary.com/dydre7amr/raw/upload/v1612881605/archia-regular-webfont_bvfbhe.ttf') format('ttf'),
 		 url('../fonts/archia-regular.eot') format('eot'),
 		 url('../fonts/Archia-Regular.otf') format('otf');
 }
