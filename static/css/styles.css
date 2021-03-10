@@ -9,7 +9,7 @@ html {
 }
 
 h1 {
-	font-family: "Archia Regular";
+	font-family: "Archia";
 	font-size: 45px;
 	font-style: normal;
 	font-weight: 400;
@@ -250,14 +250,16 @@ form p {
 }
 
 @font-face {
-	font-family: 'Archia Regular';
-	font-style: normal;
-	font-weight: normal;
-	src: url('../fonts/archia-regular.woff') format('woff'),
-		 url('../fonts/archia-regular.woff2') format('woff2'),
-		 url('../fonts/archia-regular.ttf') format('truetype'),
-		 url('../fonts/archia-regular.eot') format('eot'),
-		 url('../fonts/Archia-Regular.otf') format('otf');
+    font-family: 'Archia';
+    src: url('Archia-Regular.eot');
+    src: url('Archia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Archia-Regular.woff2') format('woff2'),
+        url('Archia-Regular.woff') format('woff'),
+        url('Archia-Regular.ttf') format('truetype'),
+        url('Archia-Regular.svg#Archia-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: optional;
 }
 
 @font-face {
